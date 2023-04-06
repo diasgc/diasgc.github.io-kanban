@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="frame">
+      <div id="hdr">
+        <p id="title" style="font-size:18px">KANBAN</p>
+        <p id="tname"></p>
+      </div>
+      <div id="qrcode"></div>
+    </div>
+
+    <select onchange="changeColor(event);">
+      <option id="option-1" value="#ff4080">UFA</option>
+      <option id="option-2" value="#0080ff">UFO</option>
+      <option id="option-3" value="#008000">APF</option>
+      <option id="option-4" value="#ffff00">DID</option>
+    </select>
+    
+    <br>
+    
+    <input id="cod" type="text" value="110004155"></input><br>
+    <input id="des" type="text" value="SomeInjectable inj. 199mg"></input><br>
+    <input id="quant" type="text" value="80"></input><br>
+    <input id="notes" type="text" value="MUITO URGENTE">NOTAS</input><br>
+    <button id="button">apply</button>
+    <button id="save">save</button>
+    <button id="print">print</button>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>
